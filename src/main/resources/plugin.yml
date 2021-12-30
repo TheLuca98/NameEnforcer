@@ -1,0 +1,6 @@
+name: "${project.name}"
+version: "${project.version}"
+main: "io.github.theluca98.nameenforcer.NameEnforcer"
+api-version: "1.16"
+authors: [ "Luca" ]
+website: "https://github.com/TheLuca98"
