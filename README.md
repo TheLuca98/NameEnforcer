@@ -3,7 +3,7 @@
 A Spigot plugin that ensures that players cannot join with an invalid username.
 
 In particular, the plugin will prevent players from joining if their username
-does not conform to the regular expression `\w` (i.e. letters, numbers and
+does not conform to the regular expression `\w+` (i.e. letters, numbers and
 underscores).
 
 This was made as an immediate response to what seems to be an exploit that
