@@ -1,13 +1,15 @@
 # NameEnforcer
 
-A Spigot plugin that ensures that players cannot join with an invalid username.
+A Spigot plugin that prevents players from entering the server if they have an
+invalid username. It will check that the username matches the regular
+expression `\w+` (which only allows letters, numbers and underscores).
 
-In particular, the plugin will prevent players from joining if their username
-does not conform to the regular expression `\w+` (i.e. letters, numbers and
-underscores).
+This was made to mitigate a bug with Minecraft's authentication system that has
+been exploited by griefing groups to connect to online-mode servers with a
+version of their username surrounded by whitespace characters, making it harder
+for server admins to ban them. Until it is patched by Mojang, **this exploit
+does affect servers that have online-mode/authentication enabled**.
 
-This was made as an immediate response to what seems to be an exploit that
-enables players to connect to **servers that have online-mode/authentication
-enabled** using a modified version of their username that contains whitespace
-characters. This exploit(?) was first witnessed by the author the Noxcrew
-Community SMP on December 30th, 2021.
+This exploit has been patched in Paper 1.18.x build #121 and in Paper 1.17.x
+build #405. If you are using Paper and your server is up to date, you do not
+need this plugin.
